@@ -17,7 +17,8 @@ myArr.push(6);
 myArr.push(7);
 myArr.pop();
 
-console.log(myArr);
+console.log(`This is the originail numbers array ${myArr}`);
+// console.log(myArr);
 
 myArr.unshift(0); // unshift is used to add an item to the beginning of the array
 myArr.shift(); // shift is used to remove an item from the beginning of the array
@@ -33,10 +34,19 @@ const newArr = myArr.join(); // join is used to convert the array into a string
 
 // splice and slice 
 
-// console.log("A", myArr);
+console.log(`This will print the string A and then the Array`)
+console.log("A", myArr); // what this does is it will print the original array
 
 const myn1 = myArr.slice(1,3); // slice is used to create a new array from an existing array
 console.log(myn1);
+console.log(`This will print the string B and then the Array`)
+console.log("B", myArr);
 
 const myn2 = myArr.splice(1,3); // splice is used to remove an item from an existing array
+
+console.log("C", myArr);
 console.log(myn2);
+
+// difference between splice and slice
+// splice is used to remove an item from an existing array
+// slice is used to create a new array from an existing array
