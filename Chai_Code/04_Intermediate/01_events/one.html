@@ -54,19 +54,25 @@
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
-   
-    
+   // we can also use stopPropagation() to stop the event from bubbling and the output will be only google clicked only.
+
+   // preventDefault() is used to prevent the default behaviour of the event.
+   // event spill over 
+
+   // lets do a small task. we want to remove the image when we click on it
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
             console.log(e.target.id);
             let removeIt = e.target.parentNode
             removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt)
+            // difference between remove and removeChild is that remove is used to remove the element from the DOM and removeChild is used to remove the element from the DOM
         }
+        // problem with this code is if we by mistake click outside the images then it will remove all the images and clear the screen thats why we use if(e.target.tagName) condition which is used to get the tag name of the element
     
         
     })
     
-    //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
