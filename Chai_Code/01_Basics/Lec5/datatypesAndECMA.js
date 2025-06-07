@@ -50,3 +50,4 @@ console.log(typeof undefined); // undefined
 
 
 // learn about specifications of all the data types.
+// bookmark (revise_1)
