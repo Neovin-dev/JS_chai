@@ -43,6 +43,12 @@ console.log(accountId);
 // used to print the variables in a tabular format and multiple variables can be printed in a single table 
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
 
+
+/*
+    prefer not to use var because of issue in block scope and function scope
+    use let and const instead
+*/
+
 /*
 
 EXPLORE THESE

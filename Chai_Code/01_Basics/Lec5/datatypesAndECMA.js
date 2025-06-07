@@ -1,4 +1,5 @@
-"use strict" // treat all the JS in the newer version as newer version
+"use strict" // treat all the JS in the file as newer version
+// "use strict" is a directive to the JS engine to run the code in strict mode
 // "use strict" is a global directive
 
 // JS engine is in the browser these alert can run in the browswer but not in node
@@ -9,6 +10,7 @@ alert(3 + 3);
 alert("3" + 3);
 */
 
+// in reality console.log is a debugging tool
 console.log(3 + 3); // addition
 console.log("3" + 3); // concatenation
 console.log(3 + "3"); // concatenation
