@@ -22,9 +22,9 @@ console.log(str3)
 
 // refer to ECMA Script 7.1.1 ToPrimitive
 
-console.log("1" + 2 + 2) // 122
-
-console.log(1 + 2 + "2") // 32
+console.log("1" + 2 + 2) // 122 as string concatenation happens
+ 
+console.log(1 + 2 + "2") // 32 as initially numbers are added then string concatentation happens
 
 console.log(+true) // 1
 console.log(true) // 1
@@ -32,7 +32,7 @@ console.log(+false) // 0
 
 console.log(+"") // 0 as empty string is falsey value
 
-let num1, num2, num3; // Not used offten as it is not a good practice
+let num1, num2, num3; // Not used often as it is not a good practice
 
 let gameCounter = 100;
 gameCounter++;

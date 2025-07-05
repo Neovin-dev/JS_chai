@@ -24,7 +24,7 @@ console.log(gameName.indexOf("e"));
 const newString = gameName.toUpperCase();
 const newString2 = gameName.toLowerCase();
 const newString3 = gameName.slice(0,4); // 0 is included and 4 is not included
-const newString4 = gameName.split("e"); // this will return an array. its parameter are 
+const newString4 = gameName.split("e"); // this will return an array. its parameter are // the character on which you want to split the string.
 const newString5 = gameName.substring(1,3); // 1 is included and 3 is not included
 const newString6 = gameName.replace("naveen", "Naveen");
 const url = "https://naveen.com/naveen.com";

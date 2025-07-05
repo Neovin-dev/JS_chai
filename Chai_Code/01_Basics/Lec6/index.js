@@ -58,3 +58,4 @@ console.log(booleanIsLoggedIn); // true because it is a truthy value that means 
 let someNumber = 33
 let stringNumber = String(someNumber);
 console.log(typeof stringNumber); // string
+console.log(stringNumber); // "33"

@@ -1,5 +1,16 @@
 // Video from 1 to 3 are just to get you started and setting up the environment
 
+// There is something called JSDocs
+/*
+4 Major Compoments
+    1. Data Types 
+    2. FLow and Control Statements (if else for if of for 4 types of loops)
+    3. Functions (arrow functions IIFE etc etc mroe confusing functions and short hands)
+    4. DOM manipulation
+    more advanced topic after it
+
+*/
+
 // actual lecture starts from video 4
 // Variables in JS
 

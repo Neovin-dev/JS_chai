@@ -8,7 +8,7 @@ console.log(balance)
 
 console.log(balance.toString().length) // this is a method
 console.log(balance.toFixed(2)) // toFixed is used to fix the number of decimal places. explained in detail: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
-
+console.log(balance.toExponential(2)) // toExponential is used to convert the number to exponential form. explained in detail: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toExponential
 const otherNumber = 123.456
 console.log(otherNumber.toPrecision(3)) // toPrecision is used to fix the number of digits. explained in detail: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision
 

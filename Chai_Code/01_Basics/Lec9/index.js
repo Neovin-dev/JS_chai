@@ -38,6 +38,7 @@ Comment: Master Objects and Browser events to master JS
 
 const heros = ["thor", "spiderman", "ironman"];
 {
+    // @decrepted
     name = "Naveen";
     age = 23;
     // this is a block scope and object

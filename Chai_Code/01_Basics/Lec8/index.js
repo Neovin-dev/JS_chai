@@ -25,11 +25,11 @@ console.log("02" > 1);
 console.log("null")
 console.log(null > 0); // false
 console.log(null == 0); // false
-console.log(null >= 0); // true because null is greater than 0
+console.log(null >= 0); // true because 
 /*
 The reason is that an equalty operator == and comparison operator > < >= <= 
 works differently.
-comparisons convert null to a mumber, treating it as 0
+comparisons convert null to a number, treating it as 0
 Thats why null >= 0 is true and null > 0 is false
 and equality operator does not convert null to a number so null == 0 is false
 */
@@ -45,13 +45,12 @@ console.log(undefined <= 0); // false
 
 // strict comparison (===)
 
-
-console.log(2 == "2"); 
+console.log(2 == "2"); // true 
 // true because data type is same as 2 is number and "2" is string but "2"
 console.log(2 === "2"); // false because data type is different 2 is number and "2" is string
 
 console.log(2 != "2"); // false
-console.log(2 !== "2"); // true
+console.log(2 !== "2"); // true 
 
 console.log(2 > "2"); // false
 console.log(2 < "2"); // false
