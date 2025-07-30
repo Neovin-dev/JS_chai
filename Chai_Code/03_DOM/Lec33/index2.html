@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: rgb(0, 0, 0); color: aqua;">
+
+ 
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    // we can set more values to the NodeList as they are
+    div.className = "main"; 
+    div.id = Math.round(Math.random()*Math.random() + 1);
+    div.setAttribute('data-id', div.id);
+    // we use setAttribute to set custom data attributes which means we can store extra information on any HTML element
+    // the difference between innerHTML and setAttribute is that. innerHTML or className will overwrite the content of the element, while setAttribute directly sets the value there while innerHTML first will fetch the current value and then replace it
+
+    // div.innerHTML = "Hello World";
+    const addText = document.createTextNode("Hello World");
+    div.appendChild(addText);
+    // there are two ways to do the same things but how they work will differ
+
+    // the div we created is in memory and not yet in the DOM because we haven't appended it to the document
+
+    // to add this div to the DOM, we need to append it to an existing element
+    document.body.appendChild(div);
+</script>
+</html>

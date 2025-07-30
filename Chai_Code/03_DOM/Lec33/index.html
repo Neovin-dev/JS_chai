@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Parent Child</title>
+</head>
+<body style = "background-color: lightblue;">
+    <div class = "parent">
+        <div class = "day">Monday</div>
+        <div class = "day">Tuesday</div>
+        <div class = "day">Wednesday</div>
+        <div class = "day">Thursday</div>
+        <div class = "day">Friday</div>
+    </div>
+    
+</body>
+    <script>
+        const parent = document.querySelectorAll('.parent') 
+        // . is used to select elements by class name
+        // console.log(parent);
+        // console.log(parent.children);
+
+        // children is a property that returns a live HTMLCollection of child elements which means
+        // it will automatically update if the DOM changes
+
+        // console.log(parent.children[1].innerHTML);
+
+        // parent.children gives us HTMLCollection but parent is a NodeList so to access the children we need to use the index
+        for(let i = 0; i < parent[0].children.length; i++) {
+            console.log(parent.children[i].innerHTML);
+        }
+
+        parent.children[1].style.color = "orange"
+        console.log(parent.firstElementChild);
+        // firstElementChild returns the first child element of the parent
+        // lastElementChild returns the last child element of the parent
+        // these are moving from parent to child
+
+        // there are ways to move from child to the parent
+        const dayOne = document.querySelector('.day')
+        const parentOne = dayOne.parentElement;
+        console.log(parentOne);
+        console.log(dayOne.nextElementSibling);
+        
+    </script>
+</html>

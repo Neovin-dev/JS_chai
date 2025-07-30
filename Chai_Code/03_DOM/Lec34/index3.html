@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body style="background-color: lime; color: #000;">
+    <ul class="languages">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li'); // create a element named li 
+        li.innerHTML = `${langName}`; // set the innerHTML of li to the language name
+        document.querySelector('.languages').appendChild(li); // append the li to the languages ul
+
+        // this is the inital though process to add a language as it common approach but it has a critical problem not in implementation but in functionality and practicality which is the appending requies the traversal of the the DOM again and again each time a new element is being added and if we have a few elements then it is of no problem but as the number of the elements grows, the performance can degrade significantly. To address this, we can use a more optimized approach.
+    }
+    addLanguage('Python');
+    addLanguage('Java');  
+
+    function addOptimisedLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.languages').appendChild(li);
+
+        // this is a better approach because it minimizes the number of times we access the DOM, which can be a costly operation. By creating the li element and setting its text content all in one go, we reduce the performance overhead associated with multiple DOM manipulations.
+    }
+
+</script>
+</html>
